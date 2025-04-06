@@ -42,27 +42,33 @@ Follow the steps below to set up the project on your local machine.
 1.1. Create a Virtual Environment
 
 Navigate to the server folder and create a virtual environment for the backend:
-cd server
-python -m venv venv
+
+    cd server
+    python -m venv venv
 
 1.2. Activate the Virtual Environment
-source venv/bin/activate
+
+    source venv/bin/activate
 
 1.3. Install Backend Dependencies
-pip install djangorestframework djangorestframework-simplejwt django-cors-headers Pillow
+
+    pip install djangorestframework djangorestframework-simplejwt django-cors-headers Pillow
 
 1.4. Create Media Folder
 Create the media folder where user profile pictures and item images will be stored:
-mkdir -p server/quick_bid/media
+
+    mkdir -p server/quick_bid/media
 
 1.5. Run Database Migrations
 Make sure your database is up-to-date by running:
-python manage.py makemigrations
-python manage.py migrate
+
+    python manage.py makemigrations
+    python manage.py migrate
 
 1.6. Start the Backend Server
 Start the Django backend server:
-python manage.py runserver
+
+    python manage.py runserver
 
 Your backend should now be running at http://127.0.0.1:8000/.
 
@@ -70,10 +76,12 @@ Your backend should now be running at http://127.0.0.1:8000/.
 2.1. Install Frontend Dependencies
 Navigate to the client/quick-bid directory and install the required libraries using npm:
 
-cd client/quick-bid
-npm install
+        cd client/quick-bid
+        npm install
 
 2.2. Start the Frontend Server
 Start the React development server:
-npm start
+
+    npm start
+
 Your frontend should now be running at http://localhost:3000/.
