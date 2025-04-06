@@ -1,0 +1,17 @@
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__/
+db.sqlite3
+
+# Virtual environment
+env/
+media/
+
+# Node modules (for React)
+node_modules/
+
+# .env files (if you use them for environment variables)
+.env
